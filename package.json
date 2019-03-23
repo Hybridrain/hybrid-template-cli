@@ -1,0 +1,9 @@
+{
+    "name": "hybrid-template-cli",
+    "description": "",
+    "authors": "Benjamin Lotterer",
+    "version": "0.0.1",
+    "main": "js/main.js",
+    "dependencies": {},
+    "devDependencies": {}
+}
