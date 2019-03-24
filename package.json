@@ -1,9 +1,18 @@
 {
     "name": "hybrid-template-cli",
-    "description": "",
-    "authors": "Benjamin Lotterer",
     "version": "0.0.1",
-    "main": "src/js/main.js",
+    "description": "Hybrid Template CLI",
+    "homepage": "https://github.com/Hybridrain/hybrid-template-cli",
+    "bugs": "https://github.com/Hybridrain/hybrid-template-cli/issues",
+    "license": "MIT",
+    "engines": {
+        "node": "^10.15.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Hybridrain/hybrid-template-cli.git"
+    },
+    "scripts": {},
     "dependencies": {},
     "devDependencies": {}
 }
