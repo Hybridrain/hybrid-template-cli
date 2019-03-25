@@ -78,19 +78,19 @@ function createTemplate(dir, args){
             console.log('index.html');
         });
     }
-    fs.mkdir('css/vendor', { recursive: true }, function (err) {
+    fs.mkdir('./css/vendor', { recursive: true }, function (err) {
         if (err) throw err;
         console.log('css/vendor');
-        fs.writeFile('css/main.css', css, function (erro) {
-            if (erro) throw erro;
+        fs.writeFile('./css/main.css', css, function (err) {
+            if (err) throw err;
             console.log('main.css');
         });
     });
-    fs.mkdir('js/vendor', { recursive: true }, function (err) {
+    fs.mkdir('./js/vendor', { recursive: true }, function (err) {
         if (err) throw err;
         console.log('js/vendor');
-        fs.writeFile('js/main.js', 'console.log("main.js works!");', function (erro) {
-            if (erro) throw erro;
+        fs.writeFile('./js/main.js', 'console.log("main.js works!");', function (err) {
+            if (err) throw err;
             console.log('main.js');
         });
     });
