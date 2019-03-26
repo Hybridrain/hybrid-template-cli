@@ -34,13 +34,14 @@ var htmlVue = `<html>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="css/vendor/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     </head>
     <body>
         <header>Hello World!</header>
         <nav></nav>
         <main></main>
         <footer></footer>
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
