@@ -1,3 +1,5 @@
+![Dependencies](https://david-dm.org/Hybridrain/hybrid-template-cli.svg)
+
 # hybrid//template
 
 Current commands:
