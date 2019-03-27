@@ -4,6 +4,8 @@
 
 ## How to use
 
+Node version 10.15.3 or higher recommended!
+
 Standard
 ```
 hr-template create template
