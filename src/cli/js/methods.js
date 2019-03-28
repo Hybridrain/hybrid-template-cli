@@ -119,6 +119,12 @@ function createTemplate(dir, args){
             if (err) throw err;
             console.log('index.html + Vue.js');
         });
+    }
+    else {
+        fs.writeFile('index.html', html, function (err) {
+            if (err) throw err;
+            console.log('index.html');
+        });
         fs.mkdir('js/vendor', { recursive: true }, function (err) {
             if (err) throw err;
             console.log('js/vendor');
@@ -126,12 +132,6 @@ function createTemplate(dir, args){
                 if (err) throw err;
                 console.log('main.js');
             });
-        });
-    }
-    else {
-        fs.writeFile('index.html', html, function (err) {
-            if (err) throw err;
-            console.log('index.html');
         });
     }
 }
