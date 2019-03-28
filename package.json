@@ -1,6 +1,6 @@
 {
   "name": "@hybridrain/hybrid-template-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Hybrid Template CLI",
   "main": "cli.js",
   "homepage": "https://github.com/Hybridrain/hybrid-template-cli",
