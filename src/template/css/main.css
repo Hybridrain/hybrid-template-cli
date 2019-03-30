@@ -13,3 +13,34 @@ body {
 h1, h2, h3, h4, h5, h6, p, a, span {
   margin: 0;
 }
+
+/* Hybrid//Template Styles */
+
+body {
+    background-color: #151515;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+h1 {
+    color: #fb7287;
+    font-size: 4em;
+    text-align: center;
+    animation: colorLoop 4s ease-in-out infinite;
+}
+
+@keyframes colorLoop {
+    0%   { color: #fb7287; }
+    25%   { color: #e6fdbd; }
+    50%   { color: #99D8CF; }
+    75%   { color: #B6A1DE; }
+    0%   { color: #fb7287; }
+}
+
+h3 {
+    color: rgb(245, 245, 245);
+    line-height: 2em;
+    text-align: center;
+}
+

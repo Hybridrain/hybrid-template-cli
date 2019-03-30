@@ -6,6 +6,14 @@
 
 Node version 10.15.3 or higher recommended!
 
+Check Version
+```
+--version
+```
+```
+-V
+```
+
 Standard
 ```
 hr-template create template
@@ -14,13 +22,18 @@ Standard shortcut
 ```
 hr-template c template
 ```
-Standard + vue
+Vue
 ```
-hr-template create template --vue
+--vue
 ```
-Standard + vue shortcut
 ```
-hr-template create template -v
+-v
 ```
-
+No Bull***
+```
+--nbs
+```
+```
+-n
+```
 
