@@ -175,27 +175,71 @@ function createVueTemplate(nbs){
 function createTemplate(dir, args){
     console.log(figlet.textSync('hybridrain//Template'));
     if(args.nbs){
-        fs.mkdir('css', { recursive: true }, function (err) {
+        fs.mkdirSync('css', { recursive: true }, function (err) {
             if (err) throw err;
             console.log('css');
-            fs.writeFile('css/main.css', '', function (err) {
-                if (err) throw err;
-                console.log('main.css - bullshit');
-            });
         });
+        fs.writeFile('css/main.css', '', function (err) {
+            if (err) throw err;
+            console.log('main.css - bullshit');
+        });
+        if(args.scss){
+            fs.writeFile('css/main.scss', '', function (err) {
+                if (err) throw err;
+                console.log('main.scss - bullshit');
+            });
+        }
+        else if(args.sass){
+            fs.writeFile('css/main.sass', '', function (err) {
+                if (err) throw err;
+                console.log('main.sass - bullshit');
+            });
+        }
     }
     else {
-        fs.mkdir('css/vendor', { recursive: true }, function (err) {
+        fs.mkdirSync('css/vendor', { recursive: true }, function (err) {
             if (err) throw err;
             console.log('css/vendor');
-            fs.readFile(path.resolve(__dirname, '../../../src/template/css/main.css'), (err, data) => {
+        });
+        fs.readFile(path.resolve(__dirname, '../../../src/template/css/main.css'), (err, data) => {
+            if (err) throw err;
+            fs.writeFile('css/main.css', data, function (err) {
                 if (err) throw err;
-                fs.writeFile('css/main.css', data, function (err) {
-                    if (err) throw err;
-                    console.log('main.css');
-                });
+                console.log('main.css');
             });
         });
+        if(args.scss){
+            fs.readFile(path.resolve(__dirname, '../../../src/template/css/main.css.map'), (err, data) => {
+                if (err) throw err;
+                fs.writeFile('css/main.css.map', data, function (err) {
+                    if (err) throw err;
+                    console.log('main.css.map');
+                });
+            });
+            fs.readFile(path.resolve(__dirname, '../../../src/template/css/main.scss'), (err, data) => {
+                if (err) throw err;
+                fs.writeFile('css/main.scss', data, function (err) {
+                    if (err) throw err;
+                    console.log('main.scss');
+                });
+            });
+        }
+        else if(args.sass){
+            fs.readFile(path.resolve(__dirname, '../../../src/template/css/main.css.map'), (err, data) => {
+                if (err) throw err;
+                fs.writeFile('css/main.css.map', data, function (err) {
+                    if (err) throw err;
+                    console.log('main.css.map');
+                });
+            });
+            fs.readFile(path.resolve(__dirname, '../../../src/template/css/main.sass'), (err, data) => {
+                if (err) throw err;
+                fs.writeFile('css/main.sass', data, function (err) {
+                    if (err) throw err;
+                    console.log('main.sass');
+                });
+            });
+        }
     }
     if (args.vue) {
         createVueTemplate(args.nbs);

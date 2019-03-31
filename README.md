@@ -22,18 +22,20 @@ Standard shortcut
 ```
 hr-template c template
 ```
+No bullshit
+```
+--nbs
+```
 Vue
 ```
 --vue
 ```
+SCSS
 ```
--v
+--scss
 ```
-No Bull***
+SASS
 ```
---nbs
-```
-```
--n
+--sass
 ```
 
