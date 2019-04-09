@@ -34,7 +34,7 @@ SCSS
 ```
 --scss
 ```
-SASS
+Sass
 ```
 --sass
 ```
